@@ -12,7 +12,7 @@ system.cpu = X86TimingSimpleCPU()
 system.membus = SystemXBar()
 
 # Create a simple cache (4-way set associative)
-
+system.cache_line_size = 64
 system.cpu.icache = Cache(
     size='32kB',
     assoc=4,  # 4-way set associative
